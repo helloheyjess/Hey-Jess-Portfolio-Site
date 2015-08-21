@@ -1,0 +1,64 @@
+/*
+* Theme Name: Hey Jess
+* Theme URI: http://heyjess.ca;
+* Description: Theme for Jessica Jones' web development portfolio site
+* Version: 1.0
+* Author: Jessica Jones
+* Author URI: http://heyjess.ca
+*/
+
+@import 'normalize';
+@import 'typography';
+@import 'header';
+@import 'navigation';
+@import 'sidebar';
+@import 'comments';
+@import 'footer';
+@import 'about';
+@import 'portfolio';
+@import 'blog';
+/*
+====================================
+Default Styling
+====================================
+*/
+
+html {
+	font-size: 16px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	color: #222;
+	background: $white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 50px auto;
+	padding: 2.5%;
+}
+
+.content {
+	float: left;
+	width: 100%;
+	margin-right: 5%;
+	margin-bottom: 75px;
+}
+
+.full {
+	width: 100%;
+}
+
+
+
+
+
+
+
+

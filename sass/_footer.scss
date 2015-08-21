@@ -1,0 +1,27 @@
+.footer-container {
+	padding: 1% 10%;
+}
+
+footer {
+	clear: both;
+	background: $navy;
+	padding: 2.5% 0;
+	color: $white;
+	a:hover {
+		color: $white;
+	}
+	.fa {
+		margin-right: 10px;
+	}
+}
+
+.social {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+	li {
+		display: inline-block;
+		padding: 0;
+	}
+}

@@ -1,0 +1,79 @@
+.portfolio-container,
+.single-portfolio {
+	background: url(images/ticks.png);
+	padding: 2.5%;
+}
+
+.portfolio-item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.technologies {
+	padding: 0;
+	list-style-type: none;
+	li {
+		padding: 0;
+	}
+}
+
+.quarter {
+	width: 28%;
+	height: 400px;
+	img {
+		object-fit: cover;
+		height: 100%;
+	}
+}
+
+.portfolio-desc,
+.portfolio-info {
+	padding: 2.5%;
+}
+
+.portfolio-info {
+	background: #F6F9F2;
+}
+
+.portfolio-desc {
+	background: $white;
+	position: relative;
+	.btn {
+		background: $blue;
+		color: $white;
+		position: absolute;
+		bottom: -15px;
+		right: -50px;
+		padding: 40px 70px;
+		font-weight: 600;
+		&:hover {
+			background: $black;
+		}
+	}
+}
+
+// Single Portfolio Pages
+
+.single-portfolio-item {
+	display: flex;
+	background: $white;
+	padding: 2.5%;
+}
+
+.single-portfolio-content {
+	width: 50%;
+	margin-right: 5%;
+}
+
+.single-portfolio-img {
+	width: 45%;
+}
+
+
+.view-live {
+	background: $blue;
+	color: $white;
+}

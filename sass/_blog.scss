@@ -1,0 +1,107 @@
+
+.blog-header {
+	background: url(http://localhost:8888/HackerYou/Projects/portfolio-site/wp-content/uploads/2015/08/7MBZIHU7O7.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.blog {
+	background: url(images/ticks.png);
+	padding: 10px;
+	.container {
+		margin: 0 auto;
+		.content {
+			float: none;
+			margin: 0 auto;
+			width: 75%;
+		}
+	}
+}
+
+.post {
+	margin: 0 auto;
+	h2.entry-title a {
+		color: $black;
+		font-family: "league-gothic", sans-serif;
+	}
+	footer {
+		background: $white;
+		color: $black;
+		padding: 2.5%;
+	}
+}
+
+.post-image {
+	text-align: center;
+}
+
+
+.post-lower {
+	margin-top: -100px;
+	margin-bottom: 50px;
+	background: $white;
+	padding: 2.5%;
+	padding-top: 130px;
+}
+
+.post-date {
+	background: #222;
+	display: inline-block;
+	color: $white;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 5px solid $blue;
+	float: left;
+	margin-right: 20px;
+	p {
+		margin: 0;
+	}
+	.date {
+		font-size: 2.25rem;
+	}
+	.month {
+		color: $blue;
+	}
+}
+
+.post-info {
+	text-transform: uppercase;
+	h2,
+	p {
+		margin: 0;
+	}
+	.post-categories {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.post-content {
+	margin: 50px 0;
+}
+
+.intro {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.25rem;
+}
+
+.read-more {
+	display: block;
+	width: 200px;
+	margin-top: 30px;
+}
+
+.single-blog {
+	background: url(images/ticks.png);
+	padding: 10px;
+}
+
+.post {
+	.entry-content {
+		background: $white;
+		padding: 2.5%;
+
+	}
+}

@@ -1,0 +1,43 @@
+.main-header,
+.page-header {
+	padding: 2.5% 10%;
+	display: flex;
+	position: relative;
+	
+	.branding {
+		margin: auto 0;
+		color: $white;
+		h2 {
+			letter-spacing: 4px;
+		}
+		p {
+			font-family: 'Playfair Display', serif;
+			font-size: 1.5rem;
+			letter-spacing: 1px;
+		}
+	}
+	.standout {
+		font-size: 6rem;
+		display: block;
+		margin-top: -20px;
+	}
+}
+
+.main-header {
+	height: 100vh;
+	background: url(images/header.jpg) no-repeat;
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+}
+
+.page-header {
+	height: 60vh;
+	.page-title {
+		color: $white;
+		margin-top: 15%;
+		.line {
+			width: 100%;
+		}
+	}
+}

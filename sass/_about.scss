@@ -1,0 +1,109 @@
+.about-container {
+	display: flex;
+}
+
+.about-item {
+	width: 50%;
+}
+
+.about-img {
+	position: relative;
+	.wp-post-image,
+	.square,
+	.square-overlay,
+	.outline,
+	.inner-outline {
+		position: absolute;
+	}
+	.wp-post-image {
+		left: 60px;
+		top: 60px;
+	}
+	.square {
+		width: 300px;
+		height: 300px;
+		background: $yellow;
+		overflow: hidden;
+	}
+	.inner-outline {
+		border: 3px solid $white;
+		width: 300px;
+		height: 300px;
+		top: 30px;
+		left: 30px;
+		z-index: 999;
+	}
+	.outline {
+		width: 300px;
+		height: 300px;
+		border: 3px solid $black;
+		top: 30px;
+		left: 30px;
+	}
+}
+
+// About Page Styles
+
+.about {
+	background: url(images/ticks.png);
+	padding: 10px;
+	.line {
+		margin: 15px 0;
+	}
+}
+
+
+.skills-container {
+	width: 45%;
+}
+
+.about-description {
+	background: $white;
+	width: 50%;
+	margin-right: 5%;
+	padding: 2.5%;
+	img {
+		margin: 0 auto;
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.skill {
+	margin-bottom: 5px;
+	h4 {
+		color: $black;
+	}
+	.skill-title,
+	.skill-description {
+		background: $white;
+		padding: 2px 2.5%;
+	}
+	.skill-title {
+		position: relative;
+		border: none;
+		width: 100%;
+		text-align: left;
+		border-bottom: 1px solid #ddd;
+		&:hover {
+			.fa {
+				color: $blue;
+			}
+		}
+		.fa {
+			position: absolute;
+			right: 10px;
+			top: 40%;
+		}
+	}
+	.skill-description {
+		
+	}
+}
+
+.chosen-btn {
+	h4 {
+		color: $blue;
+	}
+}
