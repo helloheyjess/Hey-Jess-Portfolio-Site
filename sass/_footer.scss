@@ -1,27 +1,72 @@
-.footer-container {
-	padding: 1% 10%;
+footer {
+	.fa {
+		margin-right: 5px;
+	}
 }
 
-footer {
-	clear: both;
-	background: $navy;
-	padding: 2.5% 0;
+.footer-container {
 	color: $white;
-	a:hover {
-		color: $white;
+	padding:10%;
+	background: $navy;
+	display: flex;
+	.line {
+		background: $yellow;
 	}
-	.fa {
-		margin-right: 10px;
+	.btn:hover {
+		background: $white;
+		color: $black;
 	}
 }
+
+.footer-half {
+	width: 50%;
+}
+
+input,
+textarea {
+	border: none;
+	padding: 10px 15px;
+	margin: 10px 0;
+	background: $navy;
+	color: $white;
+	border: 1px solid $blue;
+	width: 100%;
+	&:hover {
+		border: 1px solid $white;
+	}
+}
+
+input[type="submit"] {
+	border: none;
+	background: $blue;
+	width: 50%;
+}
+
+input[placeholder], [placeholder], *[placeholder] {
+	text-transform: uppercase;
+}
+
 
 .social {
 	list-style-type: none;
 	margin: 0;
+	margin-bottom: 50px;
 	padding: 0;
-	margin-top: 20px;
 	li {
 		display: inline-block;
 		padding: 0;
 	}
+	a {
+		color: $black;
+		padding: 10px;
+		&:hover {
+			color: $yellow;
+		}
+	}
+}
+
+.copywrite {
+	background: $white;
+	text-align: center;
+	padding: 5%;
 }

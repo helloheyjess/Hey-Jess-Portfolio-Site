@@ -1,14 +1,14 @@
 <footer>
-  <div class="footer-container">
-  	<h2>Say Hey!</h2>
-    <i class="fa fa-envelope"></i><a href="mailto:hello@heyjess.ca">hello@heyjess.ca</a><br>
-    <ul class="social">
-    	<li><a href="http://www.twitter.com/helloheyjess"><i class="fa fa-twitter fa-2x"></i></a></li>
-    	<li><a href="http://www.codepen.io/helloheyjess"><i class="fa fa-codepen fa-2x"></i></a></li>
-    	<li><a href="http://www.github.com/helloheyjess"><i class="fa fa-github fa-2x"></i></a></li>
-    	<li><a href="http://www.medium.com/helloheyjess"><i class="fa fa-medium fa-2x"></i></a></li>
-    </ul>
-    
+  
+  <div class="copywrite">
+	<ul class="social">
+	  	<li><a href="mailto:hello@heyjess.ca"><i class="fa fa-envelope fa-2x"></i></a></li>
+		<li><a href="http://www.twitter.com/helloheyjess"><i class="fa fa-twitter fa-2x"></i></a></li>
+		<li><a href="http://www.codepen.io/helloheyjess"><i class="fa fa-codepen fa-2x"></i></a></li>
+		<li><a href="http://www.github.com/helloheyjess"><i class="fa fa-github fa-2x"></i></a></li>
+		<li><a href="http://www.medium.com/helloheyjess"><i class="fa fa-medium fa-2x"></i></a></li>
+	</ul>
+  	<p>&copy; Jessica Jones 2015</p>
   </div>
 </footer>
 

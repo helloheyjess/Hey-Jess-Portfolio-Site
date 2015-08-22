@@ -15,7 +15,6 @@ get_header('page');  ?>
        	<div class="about-container">
       		<div class="about-description">
       			<?php $image =  the_post_thumbnail('full'); ?>
-      			<img src="<?php echo $image ?>" alt="">
       			<h2><?php the_field('sub_title'); ?></h2>
       			<div class="line"></div>
       			<h3><?php the_field('tagline'); ?></h3>

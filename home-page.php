@@ -81,6 +81,27 @@ get_header();  ?>
 		<?php echo do_shortcode('[ajax_load_more post_type="portfolio" posts_per_page="3" pause="true" scroll="false" button_label="Load More" offset="3" css_classes="portfolio-item" destroy_after="2"]') ?>
 			</div>
     <?php endwhile; // end the loop?>
+    <div class="contact">
+    	<div class="footer-container">
+  	 <div class="footer-half">
+	  	 <h2>Let's Work Together!</h2>
+	  	 <div class="line"></div>
+	  	
+	  	
+  	 </div>
+  	 <div class="footer-half">
+	  	 <form action="">
+	  	 	<label for="name" class="visually-hidden">Name</label>
+	  	 	<input type="text" id="name" placeholder="Name">
+	  	 	<label for="email" class="visually-hidden">Email</label>
+	  	 	<input type="text" id="email" placeholder="Email">
+	  	 	<label for="message" class="visually-hidden">Message</label>
+	  	 	<textarea name="message" id="message" placeholder="Message"></textarea>
+	  	 	<input type="submit" value="Send" class="btn">
+	  	 </form>
+  	 </div>
+  </div>
+    </div>
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>
