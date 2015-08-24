@@ -1,7 +1,7 @@
 <?php get_header('page'); ?>
 
 <div class="main single-portfolio">
-  <div class="container clearfix">
+  <div class="clearfix">
 
     <div class="content">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -25,9 +25,8 @@
                     } //End While
                   ?>
                 </ul>
-                <!-- Link to Live Site -->
-               
-                <a href="<?php echo the_field('live_website'); ?>" class="btn view-live">View Live</a>
+                
+                
                 <!-- Nav Links -->
                 <?php wp_link_pages(array(
                   'before' => '<div class="page-link"> Pages: ',
@@ -41,6 +40,10 @@
                 the_post_thumbnail('portfolio');
               } 
            ?>
+           <!-- Link to Live Site and Github -->
+               
+                <a href="<?php echo the_field('live_website'); ?>" class="btn view-live">View Live</a>
+                <a href="<?php echo the_field('link_to_repo'); ?>" class="btn view-live"><i class="fa fa-github"></i> Github</a>
           </div>
         </div>
 

@@ -1,19 +1,16 @@
 
-.blog-header {
-	background: url(http://localhost:8888/HackerYou/Projects/portfolio-site/wp-content/uploads/2015/08/7MBZIHU7O7.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-}
-
 .blog {
 	background: url(images/ticks.png);
-	padding: 10px;
+	padding: 25px 0;
 	.container {
 		margin: 0 auto;
 		.content {
 			float: none;
 			margin: 0 auto;
 			width: 75%;
+			@media all and (max-width: 700px) {
+				width: 85%;
+			}
 		}
 	}
 }
@@ -27,7 +24,7 @@
 	footer {
 		background: $white;
 		color: $black;
-		padding: 2.5%;
+		padding: 25px;
 	}
 }
 
@@ -40,8 +37,12 @@
 	margin-top: -100px;
 	margin-bottom: 50px;
 	background: $white;
-	padding: 2.5%;
+	padding: 25px;
 	padding-top: 130px;
+	@media all and (max-width: 480px) {
+		margin-top: -10px;
+		padding-top: 20px;
+	}
 }
 
 .post-date {
@@ -54,11 +55,19 @@
 	border-bottom: 5px solid $blue;
 	float: left;
 	margin-right: 20px;
+	@media all and (max-width: 480px) {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
 	p {
 		margin: 0;
 	}
 	.date {
 		font-size: 2.25rem;
+		@media all and (max-width: 480px) {
+			font-size: 1rem;
+		}
 	}
 	.month {
 		color: $blue;
@@ -67,6 +76,11 @@
 
 .post-info {
 	text-transform: uppercase;
+	@media all and (max-width: 525px) {
+		h2 {
+			font-size: 2.5rem;
+		}
+	}
 	h2,
 	p {
 		margin: 0;
@@ -79,18 +93,15 @@
 }
 
 .post-content {
-	margin: 50px 0;
+	margin-top: 50px 0;
+	@media all and (max-width: 480px) {
+		margin-top: 20px 0;
+	}
 }
 
 .intro {
 	font-family: 'Playfair Display', serif;
 	font-size: 1.25rem;
-}
-
-.read-more {
-	display: block;
-	width: 200px;
-	margin-top: 30px;
 }
 
 .single-blog {

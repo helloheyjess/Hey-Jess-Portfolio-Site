@@ -20,10 +20,13 @@ $(function(){
 		$(this).next().slideToggle("slow");
 	})
 
-	// Smooth Scroll
+	// Initialize Smooth Scroll
 	$('a').smoothScroll({
 		speed: 800,
 		offset: -75
 	});
+
+	//Initialize Fittext
+	jQuery(".responsive_headline").fitText();
 
 });

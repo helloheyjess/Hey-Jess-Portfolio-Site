@@ -18,9 +18,9 @@
 
 
 <?php body_class(); ?>
-<header data-stellar-background-ratio="0.5" class="page-header blog-header">
+<header data-stellar-background-ratio="0.5" class="page-header portfolio-header">
   <div class="page-title">
-    <h2>Blog</h2>
+    <h2>Portfolio</h2>
     <div class="line"></div>
   </div>
   <div class="navbar">

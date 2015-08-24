@@ -18,8 +18,7 @@
 
 
 <?php body_class(); ?>
-<?php $background = get_field('custom_background'); ?>
-<header data-stellar-background-ratio="0.5" class="page-header" style="background: url('<?php echo $background ?>') center bottom; background-size: cover;">
+<header data-stellar-background-ratio="0.5" class="page-header" style="background: url('<?php echo get_field('custom_background'); ?>') no-repeat center center fixed; -webkit-background-size: cover;">
   <div class="page-title">
     <h2><?php the_title(); ?></h2>
     <div class="line"></div>
@@ -33,7 +32,5 @@
       )); ?>
     </nav>
   </div>
-  <div class="container">
-  </div> <!-- /.container -->
 </header><!--/.header-->
 

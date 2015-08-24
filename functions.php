@@ -12,8 +12,9 @@ function theme_setup() {
 	*  sizes with add_image_size. */
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size(120, 90, true);
-	add_image_size('square', 150, 150, true);
+	add_image_size('square', 300, 300, true);
 	add_image_size ('portfolio', 500, 999, false);
+	add_image_size ('portfolio-list', 999, 300, array( 'left', 'top' ));
 	add_image_size ('wide', 800, 200, array( 'left', 'top' ));
 
 
@@ -126,7 +127,7 @@ add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
  * Returns a "Continue Reading" link for excerpts
  */
 function hackeryou_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '" class="btn read-more">Read More</a>';
+	return ' <div><a href="'. get_permalink() . '" class="btn">Read More</a></div>';
 }
 
 /**

@@ -1,12 +1,12 @@
 <footer>
   
-  <div class="copywrite">
+  <div class="footer-info">
 	<ul class="social">
-	  	<li><a href="mailto:hello@heyjess.ca"><i class="fa fa-envelope fa-2x"></i></a></li>
-		<li><a href="http://www.twitter.com/helloheyjess"><i class="fa fa-twitter fa-2x"></i></a></li>
-		<li><a href="http://www.codepen.io/helloheyjess"><i class="fa fa-codepen fa-2x"></i></a></li>
-		<li><a href="http://www.github.com/helloheyjess"><i class="fa fa-github fa-2x"></i></a></li>
-		<li><a href="http://www.medium.com/helloheyjess"><i class="fa fa-medium fa-2x"></i></a></li>
+	  	<li><a href="mailto:hello@heyjess.ca"><i class="fa fa-envelope"></i></a></li>
+		<li><a href="http://www.twitter.com/helloheyjess"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="http://www.codepen.io/helloheyjess"><i class="fa fa-codepen"></i></a></li>
+		<li><a href="http://www.github.com/helloheyjess"><i class="fa fa-github"></i></a></li>
+		<li><a href="http://www.medium.com/helloheyjess"><i class="fa fa-medium"></i></a></li>
 	</ul>
   	<p>&copy; Jessica Jones 2015</p>
   </div>

@@ -6,6 +6,10 @@ h1 {
 	font-weight: 400;
 	margin: 0;
 	letter-spacing: 2px;
+	float: left;
+	@media all and (max-width: 775px) {
+		margin-left: 5px;
+	}
 }
 
 .navbar {
@@ -16,16 +20,22 @@ h1 {
 	width: 100%;
 	top: 0;
 	left: 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	ul {
+	@media all and (max-width: 775px) {
+		padding: 2.5% 10%;
+	}
+	.menu {
 		margin: 0;
+		margin-top: 10px;
 		padding: 0;
+		float: right;
+		@media all and (max-width: 775px) {
+			float: none;
+			clear: both;
+			margin-top: 35px;
+		}
 	}
 	li {
 		display: inline-block;
-
 	}
 	a {
 		color: $white;
@@ -34,7 +44,14 @@ h1 {
 		font-size: 1rem;
 		font-weight: 400;
 		transition: all 0.5s ease;
-		&:hover {
+		@media all and (max-width: 480px) {
+			font-size: 0.9rem;
+		}
+		&:first-of-type {
+			padding-left: 0px;
+		}
+		&:hover,
+		&:focus {
 			color: $yellow;
 		}
 	}
@@ -45,7 +62,8 @@ h1 {
 .nav-next {
 	a {
 		color: $black;
-		&:hover {
+		&:hover,
+		&:focus {
 			color: $white;
 		}
 	}
@@ -58,11 +76,22 @@ h1 {
 	float: right;
 }
 
+.nav-previous,
+.nav-next {
+	@media all and (max-width: 950px) {
+		float: none;
+	}
+}
+
 .navigation {
 	a {
 		color: $black;
-		&:hover {
+		&:hover,
+		&:focus {
 			color: $white;
 		}
+	}
+	@media all and (max-width: 950px) {
+		text-align: center;
 	}
 }

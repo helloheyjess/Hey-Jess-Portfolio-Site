@@ -26,10 +26,13 @@
       <span class="standout">Something Great!</span>
     </h2>
     <div class="line"></div>
-    <p>
-      My name is Jessica Jones and I am a<br>
-      Front-End Web Developer based in Toronto, ON.
-    </p>
+    <div class="branding-tagline">
+      <p>
+        My name is Jessica Jones and I am a
+        Front-End Web Developer based in Toronto, ON.
+      </p>
+    </div>
+    <p><a href="#about"><i class="fa fa-angle-down fa-3x"></i></a></p>
   </div>
   <div class="navbar">
       <h1><?php bloginfo('name'); ?></h1>
@@ -38,9 +41,8 @@
         'container' => false,
         'theme_locations' => 'primary'
       )); ?>
+
     </nav>
   </div>
-  <div class="container">
-  </div> <!-- /.container -->
 </header><!--/.header-->
 

@@ -16,12 +16,8 @@ get_header();  ?>
     	<!-- About Section -->
 		<?php $loop = new WP_Query( array( 'post_type' => 'about' ) ); ?>
 	  		<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-	  			<div class="about-container" id="about">
-	  				<div class="about-item about-img">
-		  				<div class="square">
-		  					<div class="inner-outline"></div>
-		  				</div>
-	  					<div class="outline"></div>
+	  			<div class="about-section-container" id="about">
+	  				<div class="about-img about-item">
 		  				<?php 
 						if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 							the_post_thumbnail('medium');
@@ -40,11 +36,10 @@ get_header();  ?>
   </div> <!-- /.container -->
 		<!-- Portfolio Section -->
 		<div class="portfolio-container" id="portfolio">
-
 		<?php $loop = new WP_Query( array( 'post_type' => 'portfolio' ) ); ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<div class="portfolio-item" >
-						<div class="quarter portfolio-info">
+						<div class="third portfolio-info">
 							<!-- Display portfolio item title -->
 							<h2><?php the_title(); ?></h2>
 							<div class="line"></div>
@@ -58,16 +53,15 @@ get_header();  ?>
 							    } //End While
 							  ?>
 							</ul>
-							
+							<a href="<?php echo the_field('live_website'); ?>">View Live</a>
 						</div>
-						<div class="quarter portfolio-desc">
+						<div class="third portfolio-desc">
 							<h4><?php the_field('client_name'); ?></h4>
 							<?php the_field('brief_desc'); ?>
 							<a href="<?php the_field('link_to_full_page'); ?>" class="btn">View Details</a>
 						</div>
 						<?php while(has_sub_field('gallery')){?>
-							<div class="quarter">
-						  		<img src="<?php the_sub_field('gallery_item'); ?>">
+							<div class="third portfolio-img" style="background: url('<?php the_sub_field('gallery_item'); ?>') center bottom no-repeat; background-size: cover;">
 					  		</div>
 
 						<?php
@@ -77,30 +71,28 @@ get_header();  ?>
 					</div>
 
 			<?php endwhile; wp_reset_query(); ?>
-					
-		<?php echo do_shortcode('[ajax_load_more post_type="portfolio" posts_per_page="3" pause="true" scroll="false" button_label="Load More" offset="3" css_classes="portfolio-item" destroy_after="2"]') ?>
+			<a href="http://localhost:8888/HackerYou/Projects/portfolio-site/portfolio/" class="btn">See Full Portfolio</a>
 			</div>
     <?php endwhile; // end the loop?>
-    <div class="contact">
-    	<div class="footer-container">
-  	 <div class="footer-half">
-	  	 <h2>Let's Work Together!</h2>
-	  	 <div class="line"></div>
-	  	
-	  	
-  	 </div>
-  	 <div class="footer-half">
-	  	 <form action="">
-	  	 	<label for="name" class="visually-hidden">Name</label>
-	  	 	<input type="text" id="name" placeholder="Name">
-	  	 	<label for="email" class="visually-hidden">Email</label>
-	  	 	<input type="text" id="email" placeholder="Email">
-	  	 	<label for="message" class="visually-hidden">Message</label>
-	  	 	<textarea name="message" id="message" placeholder="Message"></textarea>
-	  	 	<input type="submit" value="Send" class="btn">
-	  	 </form>
-  	 </div>
-  </div>
+    <div class="contact" id="contact">
+		<div class="footer-container ">
+	  	 <div class="footer-half">
+		  	 <h2>Let's Work Together!</h2>
+		  	 <div class="line"></div>
+		  	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, inventore molestiae tempore, accusantium non cumque natus odio.</p>
+	  	 </div>
+	  		<div class="footer-half">
+		  	 <form action="">
+		  	 	<label for="name" class="visually-hidden">Name</label>
+		  	 	<input type="text" id="name" placeholder="Name">
+		  	 	<label for="email" class="visually-hidden">Email</label>
+		  	 	<input type="text" id="email" placeholder="Email">
+		  	 	<label for="message" class="visually-hidden">Message</label>
+		  	 	<textarea name="message" id="message" placeholder="Message"></textarea>
+		  	 	<input type="submit" value="Send" class="btn">
+		  	 </form>
+	  		</div>
+  		</div>
     </div>
 </div> <!-- /.main -->
 
