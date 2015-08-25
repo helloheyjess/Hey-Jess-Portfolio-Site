@@ -60,13 +60,10 @@ get_header();  ?>
 							<?php the_field('brief_desc'); ?>
 							<a href="<?php the_field('link_to_full_page'); ?>" class="btn">View Details</a>
 						</div>
-						<?php while(has_sub_field('gallery')){?>
-							<div class="third portfolio-img" style="background: url('<?php the_sub_field('gallery_item'); ?>') center bottom no-repeat; background-size: cover;">
+							<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
+							<div class="third portfolio-img" style="background: url('<?php echo $thumb['0']; ?>') center bottom no-repeat; background-size: cover;">
 					  		</div>
 
-						<?php
-						  } //End While
-						?>
 
 					</div>
 
@@ -79,7 +76,8 @@ get_header();  ?>
 	  	 <div class="footer-half">
 		  	 <h2>Let's Work Together!</h2>
 		  	 <div class="line"></div>
-		  	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, inventore molestiae tempore, accusantium non cumque natus odio.</p>
+		  	 <p>Are you looking for a passionate front-end web developer for your project or team? I'd love to hear from you!</p>
+		  	 <p>Get in touch through the contact form or if you'd prefer, send me an e-mail at hello@heyjess.ca</p>
 	  	 </div>
 	  		<div class="footer-half">
 		  	 <form action="">

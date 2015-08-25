@@ -19,7 +19,6 @@
 	                </div>
 	                <div class="post-info">
 	        		    <h2><?php the_title(); ?></h2>
-	                    <p>Posted by <?php the_author_link() ?> // in <?php the_category(' ') ?></p>
 	                </div>
 	                <div class="post-content">
 	                    <p class="intro"><?php the_field('intro'); ?></p>

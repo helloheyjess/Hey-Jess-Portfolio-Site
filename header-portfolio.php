@@ -4,7 +4,7 @@
 	<?php // Load Meta ?>
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php  wp_title('|', true, 'right'); ?></title>
+  <title>Jessica Jones | Front-End Web Developer based in Toronto, ON</title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700|Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
   <?php // Load our CSS ?>
@@ -24,7 +24,7 @@
     <div class="line"></div>
   </div>
   <div class="navbar">
-      <h1><?php bloginfo('name'); ?></h1>
+    <h1><a href="http://www.heyjess.ca" class="main-title"><?php bloginfo('name'); ?></a></h1>
     <nav>
       <?php wp_nav_menu( array(
         'container' => false,

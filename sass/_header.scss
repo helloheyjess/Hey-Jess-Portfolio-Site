@@ -1,24 +1,27 @@
 .main-header {
-	padding: 15% 10%;
-	height: 100vh;
+	padding: 0 10%;
+	height: 80vh;
 	overflow: scroll;
-	@media all and (max-width: 480px) {
+	@media all and (max-width: 960px) {
 		height: 100vh;
-		padding: 45% 10%;
+	}
+	@media all and (max-width: 750px) and (orientation: landscape) {
+		height: 100vh;
 	}
 	.branding {
-		margin-top: 5%;
-		color: $white;
+		margin-top: 175px;
+		color: $black;
+		@media all and (max-width: 480px) {
+			margin-top: 150px;
+		}
 		h2 {
 			letter-spacing: 4px;
-			@media all and (max-width: 480px) {
-				font-size: 3rem;
-			}
 		}
 		p {
 			font-family: 'Playfair Display', serif;
 			font-size: 1.5rem;
 			letter-spacing: 1px;
+			margin-bottom: 0;
 			@media all and (max-width: 700px){
 				font-size: 1.25rem;
 			}
@@ -31,6 +34,8 @@
 			color: $white;
 		}
 	}
+
+	
 	.standout {
 		font-size: 6rem;
 		display: block;
@@ -42,7 +47,7 @@
 			font-size: 4rem;
 		}
 		@media all and (max-width: 480px) {
-			font-size: 2rem;
+			font-size: 3rem;
 		}
 	}
 	.branding-tagline {
@@ -53,16 +58,32 @@
 	}
 }
 
+.arrow {
+	margin: 0;
+}
+
 .main-header {
-	background: url(images/header.jpg) no-repeat center center;
-	background-size: cover;
+	background: url(http://www.heyjess.ca/wp-content/uploads/2015/08/header.png) no-repeat center center;
+	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 	background-attachment: fixed;
+	@media all and (max-width: 480px) {
+		background-attachment: scroll;
+	}
 }
 
 .page-header {
 	padding: 50px 10%;
-	background-size: cover;
+	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 	background-attachment: fixed;
+	@media all and (max-width: 480px) {
+		background-attachment: scroll;
+	}
 	.page-title {
 		color: $white;
 		margin-top: 200px;
@@ -72,18 +93,32 @@
 	}
 }
 
+header {
+	.line {
+		width: 150px;
+	}
+}
+
 .blog-header {
-	background: url(http://localhost:8888/HackerYou/Projects/portfolio-site/wp-content/uploads/2015/08/7MBZIHU7O7.jpg) center center;
-	background-size: cover;
+	background: url(http://www.heyjess.ca/wp-content/uploads/2015/08/7MBZIHU7O7.jpg) center center;
+	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 	background-attachment: fixed;
+	@media all and (max-width: 480px) {
+		background-attachment: scroll;
+	}
 }
 
 .portfolio-header {
 	background: url(images/typewriter.jpg);
-	background-size: cover;
+	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 	background-attachment: fixed;
-}
-
-.page-title {
-	width: 50%;
+	@media all and (max-width: 480px) {
+		background-attachment: scroll;
+	}
 }

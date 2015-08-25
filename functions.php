@@ -134,7 +134,7 @@ function hackeryou_continue_reading_link() {
  * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and hackeryou_continue_reading_link().
  */
 function hackeryou_auto_excerpt_more( $more ) {
-	return '' . hackeryou_continue_reading_link();
+	return '...' . hackeryou_continue_reading_link();
 }
 add_filter( 'excerpt_more', 'hackeryou_auto_excerpt_more' );
 

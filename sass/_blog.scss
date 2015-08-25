@@ -93,7 +93,7 @@
 }
 
 .post-content {
-	margin-top: 50px 0;
+	margin-top: 50px;
 	@media all and (max-width: 480px) {
 		margin-top: 20px 0;
 	}
@@ -112,7 +112,7 @@
 .post {
 	.entry-content {
 		background: $white;
-		padding: 2.5%;
+		padding: 25px;
 
 	}
 }
