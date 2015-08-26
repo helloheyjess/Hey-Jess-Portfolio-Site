@@ -42,8 +42,8 @@
            ?>
            <!-- Link to Live Site and Github -->
                
-                <a href="<?php echo the_field('live_website'); ?>" class="btn view-live">View Live</a>
-                <a href="<?php echo the_field('link_to_repo'); ?>" class="btn view-live"><i class="fa fa-github"></i> Github</a>
+                <a href="<?php echo the_field('live_website'); ?>" class="btn view-live" target="_blank">View Live</a>
+                <a href="<?php echo the_field('link_to_repo'); ?>" class="btn view-live" target="_blank"><i class="fa fa-github"></i> Github</a>
           </div>
         </div>
 

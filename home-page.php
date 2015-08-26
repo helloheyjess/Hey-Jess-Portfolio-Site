@@ -53,12 +53,12 @@ get_header();  ?>
 							    } //End While
 							  ?>
 							</ul>
-							<a href="<?php echo the_field('live_website'); ?>">View Live</a>
+							<a href="<?php echo the_field('live_website'); ?>" target="_blank">View Live</a>
 						</div>
 						<div class="third portfolio-desc">
 							<h4><?php the_field('client_name'); ?></h4>
 							<?php the_field('brief_desc'); ?>
-							<a href="<?php the_field('link_to_full_page'); ?>" class="btn">View Details</a>
+							<a href="<?php the_permalink(); ?> " class="btn">View Details</a>
 						</div>
 							<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
 							<div class="third portfolio-img" style="background: url('<?php echo $thumb['0']; ?>') center bottom no-repeat; background-size: cover;">

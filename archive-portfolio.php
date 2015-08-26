@@ -26,7 +26,7 @@
                   <h2 class="responsive_headline"><?php the_title(); ?></h2>
                   <h4><?php the_field('client_name'); ?></h4>
                   <?php the_field('brief_desc') ?>
-                  <a href="<?php the_field('link_to_full_page'); ?>" class="btn">View Details</a>
+                  <a href="<?php the_permalink(); ?> " class="btn">View Details</a>
                 </div>
               </div>
             <?php endwhile; // end the custom loop ?>
