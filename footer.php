@@ -7,6 +7,7 @@
 		<li><a href="http://www.codepen.io/helloheyjess"><i class="fa fa-codepen"></i></a></li>
 		<li><a href="http://www.github.com/helloheyjess"><i class="fa fa-github"></i></a></li>
 		<li><a href="http://www.medium.com/helloheyjess"><i class="fa fa-medium"></i></a></li>
+		<li><a href="https://www.linkedin.com/in/heyjessjones"><i class="fa fa-linkedin-square"></i></a></li>
 	</ul>
   	<p>&copy; Jessica Jones 2015</p>
   </div>

@@ -68,7 +68,7 @@ get_header();  ?>
 					</div>
 
 			<?php endwhile; wp_reset_query(); ?>
-			<a href="http://localhost:8888/HackerYou/Projects/portfolio-site/portfolio/" class="btn">See Full Portfolio</a>
+			<a href="http://www.heyjess.ca/portfolio" class="btn">See Full Portfolio</a>
 			</div>
     <?php endwhile; // end the loop?>
     <div class="contact" id="contact">
